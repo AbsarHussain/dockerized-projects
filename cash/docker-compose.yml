@@ -9,5 +9,4 @@ services:
       - "3000:3000"   #changeport
     env_file:
       - .env
-<account_id>
       

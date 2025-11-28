@@ -11,5 +11,4 @@ services:
       - PORT=3000
     env_file:
       - .env
-<account_id>
     restart: unless-stopped
