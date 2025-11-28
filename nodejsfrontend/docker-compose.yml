@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  webapp:
+    container_name: front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+      - /opt/elasticbeanstalk/deployment/env.list
+    environment:
+      #- environment=production
+      - PORT=8080
+    volumes:
+      - /var/log/pm2:/app/logs          # <== PM2 logs will be written here
