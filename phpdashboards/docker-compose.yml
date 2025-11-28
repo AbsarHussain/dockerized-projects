@@ -16,4 +16,3 @@ services:
       - ./composer.lock:/var/www/html/composer.lock:cached
     env_file:
       - .env
-      - /opt/elasticbeanstalk/deployment/env.list

@@ -15,4 +15,3 @@ services:
       - ./composer.lock:/var/www/html/composer.lock
     env_file:
       - .env
-<account_id>

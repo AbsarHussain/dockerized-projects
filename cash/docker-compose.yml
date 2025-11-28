@@ -9,5 +9,5 @@ services:
       - "3000:3000"   #changeport
     env_file:
       - .env
-      - /opt/elasticbeanstalk/deployment/env.list
+<account_id>
       
