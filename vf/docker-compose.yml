@@ -11,6 +11,7 @@ services:
       - PORT=3000
     env_file:
       - .env
+      - /opt/elasticbeanstalk/deployment/env.list
   cadvisor:
     depends_on:
       - webapp
